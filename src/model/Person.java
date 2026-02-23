@@ -1,4 +1,5 @@
-package main.java.com.university.model;
+package model;
+
 
 public abstract class Person {
 
@@ -53,3 +54,4 @@ public abstract class Person {
                 name, email, age, getRole());
     }
 }
+
