@@ -49,8 +49,7 @@ public class Main {
 
     private static void printWelcomeBanner() {
         System.out.println("╔══════════════════════════════════════════════╗");
-        System.out.println("║    UNIVERSITY MANAGEMENT SYSTEM v1.0         ║");
-        System.out.println("║    Java OOP & Collections Capstone           ║");
+        System.out.println("║    UNIVERSITY MANAGEMENT SYSTEM              ║");
         System.out.println("╚══════════════════════════════════════════════╝");
         System.out.println();
     }
@@ -101,7 +100,6 @@ public class Main {
                 System.out.println(student);
 
             } else if (type == 2) {
-                // Graduate-specific fields
                 String research = getStringInput("Research Topic: ");
                 String advisor = getStringInput("Advisor Name: ");
                 String thesis = getStringInput("Thesis Track? (yes/no): ");
@@ -124,7 +122,7 @@ public class Main {
 
     private static void createCourseMenu() {
         System.out.println("\n--- CREATE COURSE ---");
-        String courseId = getStringInput("Course ID (e.g., CS101): ").toUpperCase();
+        String courseId = getStringInput("Course ID: ").toUpperCase();
         String courseName = getStringInput("Course Name: ");
         String department = getStringInput("Department: ");
         int credits = getIntInput("Credit Hours: ");
@@ -153,13 +151,13 @@ public class Main {
 
         } catch (CourseFullException e) {
             // Handle the case where course is at capacity
-            System.out.println("\n⚠ ENROLLMENT FAILED - COURSE FULL");
+            System.out.println("\n ENROLLMENT FAILED - COURSE FULL");
             System.out.println(e.getMessage());
             System.out.println("Tip: Check other sections or courses with available space.");
 
         } catch (StudentAlreadyEnrolledException e) {
             // Handle duplicate enrollment attempt
-            System.out.println("\n⚠ ENROLLMENT FAILED - ALREADY ENROLLED");
+            System.out.println("\n ENROLLMENT FAILED - ALREADY ENROLLED");
             System.out.println(e.getMessage());
 
         } catch (IllegalArgumentException e) {
@@ -334,7 +332,7 @@ public class Main {
             System.out.println("No graded students found yet.");
         } else {
             Student student = top.get();
-            System.out.println("\n🏆 TOP PERFORMING STUDENT:");
+            System.out.println("\n TOP PERFORMING STUDENT:");
             System.out.println("  Name: " + student.getName());
             System.out.println("  ID:   " + student.getStudentId());
             System.out.printf( "  GPA:  %.2f%n", student.getGpa());
@@ -437,9 +435,8 @@ public class Main {
         System.out.println("\nSaving all data before exit...");
         fileManager.saveAllData(manager);
         System.out.println("\nThank you for using University Management System!");
-        System.out.println("Goodbye! 👋");
         scanner.close();
-        return false; // false = stop the running loop
+        return false; 
     }
 
     private static String getStringInput(String prompt) {

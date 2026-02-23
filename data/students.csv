@@ -1,0 +1,3 @@
+# Students Data File - University Management System
+# Format: TYPE,ID,Name,Email,Age,Department,[type-specific fields]
+GRAD,STU1000,samillah mutoni,samillah.mutoni@gmail.com,21,software engineering,ai,prince,false

@@ -1,0 +1,3 @@
+# Courses Data File
+# Format: CourseID,Name,Department,Credits,MaxCapacity,Instructor
+CS101,Computer Maintainance,Software Engineering,3,60,Emmanuel
