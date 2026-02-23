@@ -365,21 +365,21 @@ When application starts:
 ═════════════════════════════════════════
 ```
 
-Option |	What It Does
-1 |	Register a new undergraduate or graduate student
-2 |	Create a new course with capacity and credits
-3 |	Enroll a student in a course (with exception handling)
-4 |	Update a student's grade for a specific course
-5 |	View full student profile, courses, grades and GPA
-6 |	View all students enrolled in a specific course
-7 |	List all students with GPA above 3.5 (sorted highest first)
-8 |	View average GPA for an entire department
-9 |	Find the single highest GPA student
-10 |    View all registered students in a table
-11 |	View all available courses
-12 |	See detailed tuition breakdown for a student
-0 |	Save everything to CSV files and exit
-
+| Option | Description |
+|--------|------------|
+| 1 | Register a new undergraduate or graduate student |
+| 2 | Create a new course with capacity and credits |
+| 3 | Enroll a student in a course (with exception handling) |
+| 4 | Update a student's grade for a specific course |
+| 5 | View full student profile, courses, grades and GPA |
+| 6 | View all students enrolled in a specific course |
+| 7 | List all students with GPA above 3.5 (sorted highest first) |
+| 8 | View average GPA for an entire department |
+| 9 | Find the single highest GPA student |
+| 10 | View all registered students in a table |
+| 11 | View all available courses |
+| 12 | See detailed tuition breakdown for a student |
+| 0 | Save everything to CSV files and exit |
 
 ---
 ### Sample Session
