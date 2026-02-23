@@ -149,9 +149,9 @@ public class Student extends Person {
 
 ---
 
-### Java Collections Used
+## Java Collections Used
 
-## List<Student> — Course Roster
+### List<Student> — Course Roster
 ```Java
 
 // In Course.java
@@ -165,7 +165,7 @@ enrolledStudents.contains(student); // Check if enrolled
 enrolledStudents.size();            // Count enrolled
 ```
 
-## Map<Course, Double> — Student Grade Book
+### Map<Course, Double> — Student Grade Book
 ```Java
 
 // In Student.java
@@ -201,7 +201,7 @@ courses.get("CS101");          // Retrieve instantly - O(1)!
 courses.containsKey("CS101");  // Check if exists
 ```
 
-## Java Streams — Data Queries
+### Java Streams — Data Queries
 ```Java
 
 // Dean's List - filter, sort, collect
@@ -225,12 +225,12 @@ Optional<Student> top = students.stream()
 
 ---
 
-### Exception Handling
-## Why Custom Exceptions?
+## Exception Handling
+### Why Custom Exceptions?
 Instead of letting the program crash or showing confusing errors,
 we create meaningful exceptions that tell the user exactly what went wrong.
 
-## CourseFullException
+### CourseFullException
 ```Java
 
 // Thrown when: student tries to enroll in a full course
@@ -243,7 +243,7 @@ public class CourseFullException extends Exception {
 }
 ```
 
-## StudentAlreadyEnrolledException
+### StudentAlreadyEnrolledException
 ```Java
 
 // Thrown when: student tries to enroll in a course twice
@@ -255,7 +255,7 @@ public class StudentAlreadyEnrolledException extends Exception {
     //           enrolled in 'Data Structures' (CS301)."
 }
 ```
-## How They Are Handled
+### How They Are Handled
 ```Java
 
 try {
@@ -281,11 +281,11 @@ try {
 
 ---
 
-### File Persistence
+## File Persistence
 Data is saved to and loaded from CSV files automatically.
 No database is needed - everything lives in simple text files.
 
-## How Saving Works
+### How Saving Works
 ```text
 
 When user selects "Save and Exit":
@@ -294,7 +294,7 @@ students.csv    ← All student records
 courses.csv     ← All course details  
 enrollments.csv ← Who is in what course with what grade
 ```
-## File Format Examples
+### File Format Examples
 students.csv
 
 ```text
@@ -323,7 +323,7 @@ STU1000,CS101,3.8
 STU1000,MATH201,3.2
 STU1001,CS101,3.5
 ```
-## How Loading Works
+### How Loading Works
 ```text
 
 When application starts:
@@ -336,7 +336,7 @@ When application starts:
 ```
 ---
 
-### Menu Guide
+## Menu Guide
 
 ```text
 
@@ -382,7 +382,7 @@ When application starts:
 | 0 | Save everything to CSV files and exit |
 
 ---
-### Sample Session
+## Sample Session
 
 ```text
 ╔══════════════════════════════════════════════╗
@@ -817,8 +817,8 @@ All data saved successfully!
 Thank you for using University Management System!
 ```
 ---
-### What I Learned
-## Java OOP
+## What I Learned
+### Java OOP
 ```text
 
 ✅ How abstract classes define contracts for subclasses
@@ -827,7 +827,7 @@ Thank you for using University Management System!
 ✅ How encapsulation protects data integrity
 ✅ When to use abstract class vs interface
 ```
-## Java Collections
+### Java Collections
 ```text
 
 ✅ List<T>     - ordered collection, allows iteration
@@ -837,7 +837,7 @@ Thank you for using University Management System!
 ✅ HashMap     - hash table implementation of Map
 ✅ Optional<T> - safely handles null/not-found cases
 ```
-## Exception Handling
+### Exception Handling
 ```text
 
 ✅ Difference between checked and unchecked exceptions
@@ -846,7 +846,7 @@ Thank you for using University Management System!
 ✅ How to catch multiple exception types cleanly
 ✅ How to write code that NEVER crashes on bad input
 ```
-## File I/O
+### File I/O
 ```text
 
 ✅ BufferedWriter for efficient file writing
@@ -855,7 +855,7 @@ Thank you for using University Management System!
 ✅ CSV format for human-readable data storage
 ✅ How to rebuild object relationships from saved data
 ```
-## Java Streams
+### Java Streams
 ```text
 
 ✅ stream().filter() for searching collections
