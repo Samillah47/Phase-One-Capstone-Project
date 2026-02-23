@@ -338,7 +338,7 @@ When application starts:
 
 ### Menu Guide
 
-text
+```text
 
 ╔══════════════════════════════════════════════╗
 ║    UNIVERSITY MANAGEMENT SYSTEM              ║
@@ -378,6 +378,7 @@ Option |	What It Does
 11 |	View all available courses
 12 |	See detailed tuition breakdown for a student
 0 |	Save everything to CSV files and exit
+```
 
 ---
 ### Sample Session
@@ -865,10 +866,8 @@ Thank you for using University Management System!
 ```
 ---
 ### Author
-Samillah47
-
-GitHub: @Samillah47
-Project: Phase-One-Capstone-Project
+- GitHub: @Samillah47
+- Project: Phase-One-Capstone-Project
 
 ### Programme
 SheCanCode - Advanced Java Backend Development
