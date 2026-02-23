@@ -363,6 +363,7 @@ When application starts:
 
   0.  Save and Exit
 ═════════════════════════════════════════
+```
 
 Option |	What It Does
 1 |	Register a new undergraduate or graduate student
@@ -378,7 +379,7 @@ Option |	What It Does
 11 |	View all available courses
 12 |	See detailed tuition breakdown for a student
 0 |	Save everything to CSV files and exit
-```
+
 
 ---
 ### Sample Session
