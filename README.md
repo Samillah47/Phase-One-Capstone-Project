@@ -43,16 +43,16 @@ This project was built to demonstrate mastery of:
 
 | Feature | Description |
 |---|---|
-| 👩‍🎓 Register Students | Add undergraduate or graduate students with unique auto-generated IDs |
-| 📚 Create Courses | Add courses with capacity limits and credit hours |
-| 📝 Enroll Students | Safely enroll students with business rule validation |
-| 🎯 Track Grades | Update individual course grades, GPA auto-recalculates |
-| 🏆 Dean's List | Auto-generate list of students with GPA above 3.5 |
-| 📊 Department Stats | View average GPA per department |
-| 💰 Tuition Calculator | Different tuition logic for undergrad vs graduate students |
-| 💾 Save & Load | All data persists between sessions using CSV files |
-| ⚠️ Error Handling | Custom exceptions prevent invalid operations |
-| 🖥️ Console Menu | Clean, user-friendly menu-driven interface |
+|  Register Students | Add undergraduate or graduate students with unique auto-generated IDs |
+|  Create Courses | Add courses with capacity limits and credit hours |
+|  Enroll Students | Safely enroll students with business rule validation |
+|  Track Grades | Update individual course grades, GPA auto-recalculates |
+|  Dean's List | Auto-generate list of students with GPA above 3.5 |
+|  Department Stats | View average GPA per department |
+|  Tuition Calculator | Different tuition logic for undergrad vs graduate students |
+|  Save & Load | All data persists between sessions using CSV files |
+|  Error Handling | Custom exceptions prevent invalid operations |
+|  Console Menu | Clean, user-friendly menu-driven interface |
 
 ## How to Run
 1. Compile all .java files
@@ -68,7 +68,7 @@ This project was built to demonstrate mastery of:
 
 ---
 
-## 🧱 OOP Concepts Used
+## OOP Concepts Used
 
 ### 1. Abstraction
 Abstract classes define the blueprint without full implementation.
