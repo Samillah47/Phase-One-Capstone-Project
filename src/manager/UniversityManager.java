@@ -49,7 +49,7 @@ public class UniversityManager {
             String name, String email, int age,
             String department, String researchTopic,
             String advisor, boolean isThesisTrack) {
-                
+
         String studentId = "STU" + studentIdCounter++;
 
         GraduateStudent student = new GraduateStudent(
@@ -79,7 +79,7 @@ public class UniversityManager {
                                 String department, int credits,
                                 int maxCapacity, String instructorName) {
 
-        
+                                    
         if (courses.containsKey(courseId)) {
             throw new IllegalArgumentException(
                 "Course with ID '" + courseId + "' already exists!");
