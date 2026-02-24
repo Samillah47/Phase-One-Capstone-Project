@@ -100,6 +100,7 @@ public class Main {
                 System.out.println(student);
 
             } else if (type == 2) {
+
                 String research = getStringInput("Research Topic: ");
                 String advisor = getStringInput("Advisor Name: ");
                 String thesis = getStringInput("Thesis Track? (yes/no): ");
@@ -150,18 +151,15 @@ public class Main {
             System.out.println("Enrollment successful!");
 
         } catch (CourseFullException e) {
-            // Handle the case where course is at capacity
             System.out.println("\n ENROLLMENT FAILED - COURSE FULL");
             System.out.println(e.getMessage());
             System.out.println("Tip: Check other sections or courses with available space.");
 
         } catch (StudentAlreadyEnrolledException e) {
-            // Handle duplicate enrollment attempt
             System.out.println("\n ENROLLMENT FAILED - ALREADY ENROLLED");
             System.out.println(e.getMessage());
 
         } catch (IllegalArgumentException e) {
-            // Handle invalid student/course ID
             System.out.println("\n✗ ERROR: " + e.getMessage());
         }
     }
@@ -210,6 +208,7 @@ public class Main {
             System.out.println("  Research:   " + grad.getResearchTopic());
             System.out.println("  Advisor:    " + grad.getAdvisor());
             System.out.println("  Thesis:     " + (grad.isThesisTrack() ? "Yes" : "No"));
+
         }
 
         System.out.printf("  Tuition:    $%.2f%n", student.calculateTuition());
@@ -299,6 +298,7 @@ public class Main {
         }
 
         System.out.println("╚════════════════════════════════════════════════════╝");
+
     }
 
 
@@ -437,6 +437,7 @@ public class Main {
         System.out.println("\nThank you for using University Management System!");
         scanner.close();
         return false; 
+        
     }
 
     private static String getStringInput(String prompt) {
