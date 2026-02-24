@@ -2,7 +2,7 @@ package model;
 
 public class UndergraduateStudent extends Student {
 
-    private static final double BASE_TUITION = 4800.00;
+    private static final double BASE_TUITION = 5500.00;
     private static final double ACTIVITY_FEE = 250.00;
     private static final double TECHNOLOGY_FEE = 150.00;
 
