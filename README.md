@@ -865,6 +865,16 @@ Thank you for using University Management System!
 ✅ stream().collect() for gathering results
 ✅ Method references e.g. Student::getGpa
 ```
+### Git & GitHub
+```text
+
+✅ Feature branch workflow
+✅ Meaningful commit messages
+✅ Pull requests and merging
+✅ Pushing to remote repository
+✅ Resolving merge conflicts
+```
+
 ---
 ### Author
 - GitHub: @Samillah47
