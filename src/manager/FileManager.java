@@ -145,7 +145,7 @@ public class FileManager {
                     writer.write(line);
                     writer.newLine();
                     count++;
-                    
+
                 }
             }
 
@@ -195,6 +195,7 @@ public class FileManager {
                     manager.addStudentDirectly(student);
                     loadedCount++;
                 }
+                
             }
 
             System.out.println("  Loaded " + loadedCount + " students.");
