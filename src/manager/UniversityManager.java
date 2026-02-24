@@ -160,11 +160,11 @@ public class UniversityManager {
     public double getAverageGpaByDepartment(String department) {
         OptionalDouble average = students.stream()
                 .filter(s -> s.getDepartment().equalsIgnoreCase(department))
-                .filter(s -> s.getGpa() > 0.0) // Only count graded students
-                .mapToDouble(Student::getGpa)   // Method reference to getGpa()
-                .average();                      // Built-in average calculation
+                .filter(s -> s.getGpa() > 0.0) 
+                .mapToDouble(Student::getGpa)   
+                .average();                      
 
-        return average.orElse(0.0); // Return 0.0 if no students found
+        return average.orElse(0.0); 
     }
 
     public Optional<Student> getTopPerformingStudent() {
