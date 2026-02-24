@@ -79,7 +79,7 @@ public class UniversityManager {
                                 String department, int credits,
                                 int maxCapacity, String instructorName) {
 
-                                    
+
         if (courses.containsKey(courseId)) {
             throw new IllegalArgumentException(
                 "Course with ID '" + courseId + "' already exists!");
@@ -118,6 +118,7 @@ public class UniversityManager {
             throw new CourseFullException(
                     courseId, course.getCourseName(), course.getMaxCapacity());
         }
+        
         course.addStudent(student);
         student.addCourse(course);
 
