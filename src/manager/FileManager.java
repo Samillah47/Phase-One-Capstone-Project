@@ -114,7 +114,7 @@ public class FileManager {
 
                 writer.write(line);
                 writer.newLine();
-                
+
             }
 
             System.out.println("  Saved " + manager.getAllCourses().size()
@@ -145,6 +145,7 @@ public class FileManager {
                     writer.write(line);
                     writer.newLine();
                     count++;
+                    
                 }
             }
 
