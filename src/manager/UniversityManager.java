@@ -169,8 +169,8 @@ public class UniversityManager {
 
     public Optional<Student> getTopPerformingStudent() {
         return students.stream()
-                .filter(s -> s.getGpa() > 0.0) // Must have at least one grade
-                .max(Comparator.comparingDouble(Student::getGpa)); // Find max GPA
+                .filter(s -> s.getGpa() > 0.0) 
+                .max(Comparator.comparingDouble(Student::getGpa)); 
     }
 
     public List<Student> getStudentsByDepartment(String department) {
