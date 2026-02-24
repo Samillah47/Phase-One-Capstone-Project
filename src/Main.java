@@ -100,6 +100,7 @@ public class Main {
                 System.out.println(student);
 
             } else if (type == 2) {
+                
                 String research = getStringInput("Research Topic: ");
                 String advisor = getStringInput("Advisor Name: ");
                 String thesis = getStringInput("Thesis Track? (yes/no): ");
