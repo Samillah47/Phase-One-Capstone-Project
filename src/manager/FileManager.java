@@ -63,7 +63,7 @@ public class FileManager {
     }
 
     private String buildStudentCsvLine(Student student) {
-        // Common fields for all students
+
         StringBuilder sb = new StringBuilder();
 
         if (student instanceof UndergraduateStudent) {
@@ -93,9 +93,7 @@ public class FileManager {
         return sb.toString();
     }
 
-    /**
-     * Saves all courses to courses.csv
-     */
+    
     private void saveCourses(UniversityManager manager) {
         try (BufferedWriter writer = new BufferedWriter(
                 new FileWriter(COURSES_FILE))) {
@@ -116,6 +114,7 @@ public class FileManager {
 
                 writer.write(line);
                 writer.newLine();
+
             }
 
             System.out.println("  Saved " + manager.getAllCourses().size()
@@ -146,6 +145,7 @@ public class FileManager {
                     writer.write(line);
                     writer.newLine();
                     count++;
+
                 }
             }
 
@@ -195,6 +195,7 @@ public class FileManager {
                     manager.addStudentDirectly(student);
                     loadedCount++;
                 }
+
             }
 
             System.out.println("  Loaded " + loadedCount + " students.");
@@ -314,6 +315,7 @@ public class FileManager {
                     }
                     loadedCount++;
                 }
+                
             }
 
             System.out.println("  Loaded " + loadedCount + " enrollment records.");
