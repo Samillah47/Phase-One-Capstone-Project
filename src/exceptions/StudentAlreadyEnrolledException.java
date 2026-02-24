@@ -28,4 +28,5 @@ public class StudentAlreadyEnrolledException extends Exception {
     public String getStudentName() { return studentName; }
     public String getCourseId() { return courseId; }
     public String getCourseName() { return courseName; }
+    
 }
