@@ -298,7 +298,7 @@ public class Main {
         }
 
         System.out.println("╚════════════════════════════════════════════════════╝");
-        
+
     }
 
 
@@ -437,6 +437,7 @@ public class Main {
         System.out.println("\nThank you for using University Management System!");
         scanner.close();
         return false; 
+        
     }
 
     private static String getStringInput(String prompt) {
