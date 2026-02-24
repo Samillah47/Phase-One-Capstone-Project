@@ -42,7 +42,7 @@ public class FileManager {
     private void saveStudents(UniversityManager manager) {
         try (BufferedWriter writer = new BufferedWriter(
                 new FileWriter(STUDENTS_FILE))) {
-
+                    
             writer.write("# Students Data File - University Management System");
             writer.newLine();
             writer.write("# Format: TYPE,ID,Name,Email,Age,Department,[type-specific fields]");
