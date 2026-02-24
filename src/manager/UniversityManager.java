@@ -49,7 +49,7 @@ public class UniversityManager {
             String name, String email, int age,
             String department, String researchTopic,
             String advisor, boolean isThesisTrack) {
-
+                
         String studentId = "STU" + studentIdCounter++;
 
         GraduateStudent student = new GraduateStudent(
