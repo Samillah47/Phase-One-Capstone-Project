@@ -195,7 +195,7 @@ public class FileManager {
                     manager.addStudentDirectly(student);
                     loadedCount++;
                 }
-                
+
             }
 
             System.out.println("  Loaded " + loadedCount + " students.");
@@ -315,6 +315,7 @@ public class FileManager {
                     }
                     loadedCount++;
                 }
+                
             }
 
             System.out.println("  Loaded " + loadedCount + " enrollment records.");
