@@ -118,7 +118,7 @@ public class UniversityManager {
             throw new CourseFullException(
                     courseId, course.getCourseName(), course.getMaxCapacity());
         }
-        
+
         course.addStudent(student);
         student.addCourse(course);
 
@@ -153,7 +153,8 @@ public class UniversityManager {
                 .filter(s -> s.getGpa() > 3.5)        // Step 2: filter
                 .sorted((s1, s2) -> Double.compare(    // Step 3: sort descending
                         s2.getGpa(), s1.getGpa()))
-                .collect(Collectors.toList());           // Step 4: collect
+                .collect(Collectors.toList()); 
+                          
     }
 
     public double getAverageGpaByDepartment(String department) {
