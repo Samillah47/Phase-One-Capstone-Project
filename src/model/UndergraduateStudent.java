@@ -59,3 +59,4 @@ public class UndergraduateStudent extends Student {
                        getYearLevelName(), major, calculateTuition());
     }
 }
+
