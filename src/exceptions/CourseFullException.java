@@ -23,5 +23,7 @@ public class CourseFullException extends Exception {
 
     public String getCourseId() { return courseId; }
     public String getCourseName() { return courseName; }
-    public int getMaxCapacity() { return maxCapacity; }
+    public int getMaxCapacity() { return maxCapacity;
+    }
+    
 }
