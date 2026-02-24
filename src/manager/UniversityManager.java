@@ -79,7 +79,7 @@ public class UniversityManager {
                                 String department, int credits,
                                 int maxCapacity, String instructorName) {
 
-        
+
         if (courses.containsKey(courseId)) {
             throw new IllegalArgumentException(
                 "Course with ID '" + courseId + "' already exists!");
@@ -118,6 +118,7 @@ public class UniversityManager {
             throw new CourseFullException(
                     courseId, course.getCourseName(), course.getMaxCapacity());
         }
+
         course.addStudent(student);
         student.addCourse(course);
 
@@ -152,23 +153,24 @@ public class UniversityManager {
                 .filter(s -> s.getGpa() > 3.5)        // Step 2: filter
                 .sorted((s1, s2) -> Double.compare(    // Step 3: sort descending
                         s2.getGpa(), s1.getGpa()))
-                .collect(Collectors.toList());           // Step 4: collect
+                .collect(Collectors.toList()); 
+                          
     }
 
     public double getAverageGpaByDepartment(String department) {
         OptionalDouble average = students.stream()
                 .filter(s -> s.getDepartment().equalsIgnoreCase(department))
-                .filter(s -> s.getGpa() > 0.0) // Only count graded students
-                .mapToDouble(Student::getGpa)   // Method reference to getGpa()
-                .average();                      // Built-in average calculation
+                .filter(s -> s.getGpa() > 0.0) 
+                .mapToDouble(Student::getGpa)   
+                .average();                      
 
-        return average.orElse(0.0); // Return 0.0 if no students found
+        return average.orElse(0.0); 
     }
 
     public Optional<Student> getTopPerformingStudent() {
         return students.stream()
-                .filter(s -> s.getGpa() > 0.0) // Must have at least one grade
-                .max(Comparator.comparingDouble(Student::getGpa)); // Find max GPA
+                .filter(s -> s.getGpa() > 0.0) 
+                .max(Comparator.comparingDouble(Student::getGpa)); 
     }
 
     public List<Student> getStudentsByDepartment(String department) {
