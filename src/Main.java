@@ -208,6 +208,7 @@ public class Main {
             System.out.println("  Research:   " + grad.getResearchTopic());
             System.out.println("  Advisor:    " + grad.getAdvisor());
             System.out.println("  Thesis:     " + (grad.isThesisTrack() ? "Yes" : "No"));
+            
         }
 
         System.out.printf("  Tuition:    $%.2f%n", student.calculateTuition());
