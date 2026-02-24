@@ -100,7 +100,7 @@ public class Main {
                 System.out.println(student);
 
             } else if (type == 2) {
-                
+
                 String research = getStringInput("Research Topic: ");
                 String advisor = getStringInput("Advisor Name: ");
                 String thesis = getStringInput("Thesis Track? (yes/no): ");
@@ -151,18 +151,15 @@ public class Main {
             System.out.println("Enrollment successful!");
 
         } catch (CourseFullException e) {
-            // Handle the case where course is at capacity
             System.out.println("\n ENROLLMENT FAILED - COURSE FULL");
             System.out.println(e.getMessage());
             System.out.println("Tip: Check other sections or courses with available space.");
 
         } catch (StudentAlreadyEnrolledException e) {
-            // Handle duplicate enrollment attempt
             System.out.println("\n ENROLLMENT FAILED - ALREADY ENROLLED");
             System.out.println(e.getMessage());
 
         } catch (IllegalArgumentException e) {
-            // Handle invalid student/course ID
             System.out.println("\n✗ ERROR: " + e.getMessage());
         }
     }
